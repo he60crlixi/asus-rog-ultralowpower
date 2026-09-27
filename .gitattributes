@@ -1,0 +1,7 @@
+# .bat 在 cmd 里必须是 CRLF, 否则会出怪问题
+*.bat text eol=crlf
+# PowerShell 脚本统一 CRLF (本项目在 Windows + PS 5.1 上跑)
+*.ps1 text eol=crlf
+*.reg text eol=crlf
+*.md  text eol=crlf
+*.cs  text eol=crlf

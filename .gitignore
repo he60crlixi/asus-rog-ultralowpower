@@ -1,0 +1,17 @@
+# 编译产物 (build.ps1 会重新生成)
+dist/
+app/UltraLowPower.exe
+*.pdb
+
+# 本机专属: 装机当时的电源方案注册表快照, 对别人没意义
+Silent_PowerScheme_Backup.reg
+
+# 已废弃的诊断脚本 (探测的是早已删掉的 HidDiag) 和第三方源码参考副本
+.diag.ps1
+.diag_cs_extract.ps1
+.diag_out.txt
+.ref_GPUMode.cs
+
+# 运行时状态 (ULP 开启/退出时生成, 属于用户数据不能提交)
+backup.csv
+state.json
